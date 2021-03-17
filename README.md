@@ -1,3 +1,14 @@
 # python_100
+python100本ノック用
 
-python100本ノック
+## コマンド：Dockerイメージのビルドから起動
+docker-compose up -d --build
+
+## 起動&デーモン化
+docker-compose up -d
+
+## コンテナに入る
+docker-compose exec python3 bash
+
+## 停止
+docker-compose down
