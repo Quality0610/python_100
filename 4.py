@@ -4,9 +4,10 @@ string = string.split()
 length_list = []
 
 for str in string:
-    if ',' in str or '.' in str:
-        str.
-        length_list.append(len(str) - 1)
+    if ',' in str:        
+        length_list.append(len(str) - str.count(','))
+    elif '.' in str:
+        length_list.append(len(str) - str.count('.'))
     else:
         length_list.append(len(str))
 
