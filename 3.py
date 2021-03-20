@@ -1,9 +1,12 @@
-string1 = 'パトカー'
-string2 = 'タクシー'
-answer_string = ''
+import re
 
-for str1, str2 in zip(string1, string2):
-    answer_string = answer_string + str1 + str2
-    
+string = 'Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics.'
+string = re.sub('[,\.]', '', string) 
 
-print(answer_string)
+string = string.split()
+length_list = []
+
+for str in string:
+        length_list.append(len(str))
+
+print(length_list)

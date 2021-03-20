@@ -1,6 +1,9 @@
+string1 = 'パトカー'
+string2 = 'タクシー'
+answer_string = ''
 
-str = 'パタトクカシーー'
+for str1, str2 in zip(string1, string2):
+    answer_string = answer_string + str1 + str2
+    
 
-answer_str = str[::2]
-
-print(answer_str)
+print(answer_string)

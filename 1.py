@@ -1,6 +1,6 @@
 
-str = 'stressed'
+str = 'パタトクカシーー'
 
-reversed_str = str[::-1]
+answer_str = str[::2]
 
-print(reversed_str)
+print(answer_str)

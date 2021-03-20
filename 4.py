@@ -1,12 +1,18 @@
-import re
 
-string = 'Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics.'
-string = re.sub('[,\.]', '', string) 
-
+string = 'Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can.'
 string = string.split()
-length_list = []
 
-for str in string:
-        length_list.append(len(str))
+nums = [1, 5, 6, 7, 8, 9, 15, 16, 19]
 
-print(length_list)
+dictionary = {}
+
+for i , word in enumerate(string):
+    print(i)
+    print(word) 
+
+    if i + 1 in nums:
+        dictionary[word[:1]] = i + 1
+    else:
+        dictionary[word[:2]] = i + 1
+
+print(dictionary)
